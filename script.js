@@ -108,3 +108,9 @@ const links = Array.from(category.querySelectorAll("a"));
 const de = links
   .map(link => link.textContent)
   .filter(streetName => streetName.includes("de"));
+
+// 7. sort Exercise
+// Sort the people alphabetically by last name
+const alpha = people.sort(function(lastOne, nextOne) {
+  console.log(lastOne);
+});
