@@ -55,9 +55,7 @@ const people = [
 ];
 
 // 1 . Filter the list of inventors for those who were borin in the 1500's
-const fifteen = inventors.filter(inventor => {
-  if (inventor.year >= 1500 && inventor.year < 1600) {
-    return true; //keep it!
-  }
-});
+const fifteen = inventors.filter(
+  inventor => inventor.year >= 1500 && inventor.year < 1600
+);
 console.table(fifteen);
