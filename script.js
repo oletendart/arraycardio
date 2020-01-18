@@ -139,6 +139,11 @@ const data = [
 ];
 
 const transport = data.reduce(function(obj, item) {
-  console.log(item);
+  if (!obj[item]) {
+    obj[item] = 0;
+  }
+  obj[item]++;
   return obj;
 }, {});
+
+console.log(transport);
