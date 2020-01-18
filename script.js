@@ -53,3 +53,11 @@ const people = [
   "Blair, Tony",
   "Blake, William"
 ];
+
+// 1 . Filter the list of inventors for those who were borin in the 1500's
+const fifteen = inventors.filter(function(inventor) {
+  if (inventor.year >= 1500 && inventor.year < 1600) {
+    return true; //keep it!
+  }
+});
+console.table(fifteen);
