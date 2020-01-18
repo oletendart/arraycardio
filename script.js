@@ -135,7 +135,8 @@ const data = [
   "car",
   "van",
   "car",
-  "truck"
+  "truck",
+  "pogostick"
 ];
 
 const transport = data.reduce(function(obj, item) {
