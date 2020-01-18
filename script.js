@@ -88,3 +88,12 @@ const totalYears = inventors.reduce((total, inventor) => {
 }, 0);
 
 console.log(totalYears);
+
+// 5. Sort the inventors by years lived
+const oldest = inventors.sort(function(a, b) {
+  const lastGuy = a.passed - a.year;
+  const nextGuy = b.passed - b.year;
+  return lastGuy > nextGuy ? -1 : 1;
+});
+
+console.table(oldest);
