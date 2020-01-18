@@ -54,8 +54,16 @@ const people = [
   "Blake, William"
 ];
 
+// Array.prototype.filter()
 // 1 . Filter the list of inventors for those who were borin in the 1500's
 const fifteen = inventors.filter(
   inventor => inventor.year >= 1500 && inventor.year < 1600
 );
 console.table(fifteen);
+
+// Array.prototype.map()
+// 2. Give us an array of the inventory first and last names
+const fullNames = inventors.map(
+  inventor => inventor.first + " " + inventor.last
+);
+console.log(fullNames);
