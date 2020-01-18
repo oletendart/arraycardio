@@ -102,12 +102,12 @@ console.table(oldest);
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 // go to the corresponding page and call the following
 
-const category = document.querySelector(".mw-category");
-const links = Array.from(category.querySelectorAll("a"));
+// const category = document.querySelector(".mw-category");
+// const links = Array.from(category.querySelectorAll("a"));
 
-const de = links
-  .map(link => link.textContent)
-  .filter(streetName => streetName.includes("de"));
+// const de = links
+//  .map(link => link.textContent)
+//  .filter(streetName => streetName.includes("de"));
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
