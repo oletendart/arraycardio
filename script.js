@@ -103,6 +103,6 @@ console.table(oldest);
 // go to the corresponding page and call the following
 
 const category = document.querySelector(".mw-category");
-const links = category.querySelectorAll("a");
+const links = Array.from(category.querySelectorAll("a"));
 
 const de = links.map(link => link.textContent);
